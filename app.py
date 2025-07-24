@@ -110,6 +110,28 @@ st.set_page_config(page_title="YouTube Scraper + Chatbot", layout="wide")
 st.title("🎬 YouTube Video Scraper + 🤖 Videos Chatbot ")
 st.markdown("---")
 
+# --- Description Toggle ---
+with st.expander("ℹ️ How to Use This App"):
+    st.markdown("""
+    This app allows you to **search YouTube videos** using a keyword and then **chat with an AI chatbot** (powered by Gemini) about the content of those videos.
+
+    **Here's how it works:**
+    1. **Enter a search term** in the input box (e.g., `"AI in education"`).
+    2. Click **🔎 Search YouTube** to scrape video data.
+    3. After a few seconds, the app will:
+        - Display a list of videos (title, channel, views, etc.)
+        - Allow you to **download a CSV** of the results.
+        - Enable a **chatbot** that can answer questions about the scraped videos.
+    4. Ask anything in the **💬 Chat with Gemini** section, like:
+        - `"Which video has the most views?"`
+        - `"Tell me about videos related to AI tools."`
+    
+    **Tips:**
+    - Be specific with your search queries for better results.
+    - Gemini uses extracted metadata (title, channel, etc.) to answer, not the actual video transcript.
+    """)
+
+
 # --- Scraping Section ---
 st.subheader("🔍 Scrape YouTube")
 search_query = st.text_input("Enter search term:", key="search_query")
