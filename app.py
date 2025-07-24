@@ -107,7 +107,7 @@ def create_vectorstore(df):
 
 # --- Streamlit UI ---
 st.set_page_config(page_title="YouTube Scraper + Chatbot", layout="wide")
-st.title("🎬 YouTube Video Scraper + 🤖 Vudeos Chatbot ")
+st.title("🎬 YouTube Video Scraper + 🤖 Videos Chatbot ")
 st.markdown("---")
 
 # --- Scraping Section ---
